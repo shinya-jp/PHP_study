@@ -19,7 +19,9 @@
 <h2>Practice</h2>
 <pre>
 <?php
-print "現在の時間は　" . (date('G時 i分 s秒'))
+// オブジェクトを使った表示
+$today = new DateTime();
+print($today -> format('G時 i分 s秒'));
 ?>
 
 </pre>
