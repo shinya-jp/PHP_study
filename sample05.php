@@ -22,8 +22,8 @@
 $total = (100 + 1050 +200);
 $tax = 1.08;
 ?>
-合計金額は: <?php print $total; ?>円です
-税込価格は: <?php print $total * $tax; ?>円です
+合計金額は: <?php print($total); ?>円です
+税込価格は: <?php print($total * $tax); ?>円です
 </pre>
 </main>
 </body>
