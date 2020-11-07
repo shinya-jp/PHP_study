@@ -19,8 +19,7 @@
 <h2>Practice</h2>
 <pre>
 <?php
-<!-- php.iniを変更し日本時間へ -->
-print(date("Y-m-d H:i:s"));
+print "現在の時間は　" . (date('G時 i分 s秒'))
 ?>
 
 </pre>
