@@ -20,7 +20,7 @@
 <pre>
 <?php
 $i = 1;
-print($i. "\n");
+// print($i. "\n");
 
 while ($i <= 36) {    #while (繰り返し条件) {
 	print($i. "\n");  #繰り返したい処理
