@@ -19,12 +19,16 @@
 <h2>Practice</h2>
 <pre>
 <?php
-$i = 1;
+/* $i = 1;
 // print($i. "\n");
 
-while ($i <= 36) {    #while (繰り返し条件) {
+while ($i < 36) {    #while (繰り返し条件) {
 	print($i. "\n");  #繰り返したい処理
 	$i = $i + 1;      #更新処理
+}
+*/
+for ($i =1 ; $i < 36 ; $i++) { 
+	print($i. "\n");
 }
 
 ?>
