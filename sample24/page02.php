@@ -19,6 +19,8 @@
 <h2>Practice</h2>
 <pre>
 	変数に保存した値：　<?php echo $value; ?>
+	<!--　画面を移動したりすると変数はなくなる
+	保存しておきたい場合はcookieをしようする -->
 	Cookie保存した値: <?php echo $_COOKIE['save_message']; ?>
 </pre>
 </main>
