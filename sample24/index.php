@@ -1,6 +1,7 @@
 <?php
 $value = '変数に保存した値です';
 setcookie('save_message', 'cookieに保存した値です', time() + 60 * 60 * 24 *14); #１４日間保存される
+// save_messageは変数　timeは保存しておく時間
 ?>
 
 <!DOCTYPE html>
