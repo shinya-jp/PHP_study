@@ -22,7 +22,8 @@
 
 		<?php
 			for ($i = 1; $i <= 10; $i++) {
-				if ($i % 2) {
+				if ($i % 3) {
+					// あまりがあれば真　割り切れれば(0)偽(else)
 					echo "<tr style='background-color: #ccc'>";
 				} else {
 					echo "<tr>";
