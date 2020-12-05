@@ -43,6 +43,25 @@ IDは必ずprimaryキーに設定したほうが良い
 AUTO_INCREMENT 自動でIDを順番に採番する
 12 4 など3番めが削除されている場合は3に割り振りされるのではなく、5番になる
 
+データの検索
+SELECT * FROM テーブル名 WHERE カラム名　= ~~
+例　SELECT * FROM my_items WHERE id = 1;
+my_items　といったテーブル名のidが1番のものを検索した
+
+データ型がtext型のときの文字検索の場合　単語が複数ある場合
+例 keyword [甘い,硬い,大きい]
+SELECT * FROM my_items WHERE keyword LIKE “%甘い%”
+%甘い%や　甘い％などたくさんの条件検索方法がある
+
+異なるテーブル同士をレリーションして見る方法
+makers my_items というテーブルがあるとする
+SELECT * FROM makers, my_items WHERE my_items. id = 1 AND 
+makers. id = my_items .makers_id
+リレーションしたいテーブルを記入
+idなど、どちらのテーブルにあるカラムはどのテーブルか指定する
+Makers id は　my_itemsのmakers_idと一致しているんですという意味
+この文があることでリレーションできる
+
 */
 
 ?>
