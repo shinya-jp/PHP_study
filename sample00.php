@@ -62,6 +62,30 @@ idなど、どちらのテーブルにあるカラムはどのテーブルか指
 Makers id は　my_itemsのmakers_idと一致しているんですという意味
 この文があることでリレーションできる
 
+表示の並び順
+SELECT * FROM my_items ORDER BY id ASC
+ASCー昇順　DESCー降順
+ORDER BY のあとに並び順を指定するカラム　昇順か降順か
+WHEREとの組み合わせ
+SELECT * FROM my_items WHERE price <= 180 ORDER BY price
+文字列でORDER　BYを使用するときはひらがな。、カタカナ、漢字をそれぞれ使用しているとコンピューターでの読み込みはあいうえお順ではないので、新たなカラムを作成し共通のカナやローマ字などにする。
+
+内部結合と外部結合
+上記の,を使ったリレーションは内部結合
+外部結合をすることによって、nullのデータも見ることができる
+SELECT * FROM item_name, SUM(COUNT) FROM my_item
+item_nameとcountを合計したものを表示
+LEFT JOIN carts ON my_item.id = carts.items_id GROUP BY 
+左側のデータにcartsのアイテムを属させる　ONからが条件を記入
+carts.itrm_id
+
+DISTINCT 重複をなくす
+BETWEEN 50 AND 150 ５０〜１５０以下に収まっているか
+IN 例　id IN (1,3); idの1,3を選択できる
+LIMIT 制限　例 SELECT * FROM carts LIMIT 2, 3
+	Cartsの中身の２件目から３個まで表示する
+
+
 */
 
 ?>
